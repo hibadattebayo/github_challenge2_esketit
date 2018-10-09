@@ -1,20 +1,10 @@
-/*Standard js for a responsive menu*/
+/*When you click on "menu" the button changes into "terug" and the menu appears*/otherwise the menu does not appear.*/
 document.getElementsByClassName('menutoggle')[0].onclick = function () {
-	var menu = document.getElementById('menu');
 	if(menu.className == "active"){
+		document.getElementById("menuChange").innerHTML = "Menu";
 		menu.className = "inactive";
 	} else {
-		menu.className = "active";
-	};
-};
-
-/*I tried to make my own function, because I wanted "menu" to change into "go back" when you click on it,
-and "go back" to change into "menu" when you click on it again but it failed.*/
-document.getElementsByClassName('menutoggle')[0].onclick = function () {
-	if(menu.className == "active"){
 		document.getElementById("menuChange").innerHTML = "Terug";
-		menu.className = "inactive";
-	} else {
 		menu.className = "active";
 	};
 }
