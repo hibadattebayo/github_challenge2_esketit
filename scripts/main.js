@@ -1,0 +1,35 @@
+/*Standard js for a responsive menu*/
+document.getElementsByClassName('menutoggle')[0].onclick = function () {
+	var menu = document.getElementById('menu');
+	if(menu.className == "active"){
+		menu.className = "inactive";
+	} else {
+		menu.className = "active";
+	};
+};
+
+/*I tried to make my own function, because I wanted "menu" to change into "go back" when you click on it,
+and "go back" to change into "menu" when you click on it again but it failed.*/
+document.getElementsByClassName('menutoggle')[0].onclick = function () {
+	if(menu.className == "active"){
+		document.getElementById("menuChange").innerHTML = "Terug";
+		menu.className = "inactive";
+	} else {
+		menu.className = "active";
+	};
+}
+
+/*What i understood about this Jquery function is that is's actually quite easy :')
+You add the class "changeColor" everytime the user scrolls more than 50 pixels down
+When the user scrolls up the class "changeColor" dissapears which causes the color I gave to it in css
+to dissapear as well. Works like magic. I put the source of where i found this code in my word document! */
+$(function() {
+   $(window).scroll(function () {
+      if ($(this).scrollTop() > 50) {
+         $('ul').addClass('changeColor')
+      }
+      if ($(this).scrollTop() < 50) {
+         $('ul').removeClass('changeColor')
+      }
+   });
+});

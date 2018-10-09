@@ -1,0 +1,641 @@
+@import url(https://fonts.googleapis.com/css?family=Overpass);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body{
+	margin:0;
+}
+	
+a{
+	text-decoration:none;
+	color:#000;
+}
+
+@media only screen and (min-width :0px){
+.picture1,.picture3{
+	align-self:center;
+	background-position:center;
+	max-width:100%;
+}
+
+picture1,.picture2,.picture3{
+	background-size:cover;
+}
+
+.picture1{
+	background-image:url(../images/winkelvoor360.jpg);
+	height:243px;
+	margin:0;
+	opacity: 0.5;
+}
+
+.picture2{
+	background-image:url(../images/winkelbinnen360.jpg);
+	width:186px;
+	height:137px;
+	display:block;
+	opacity: 0.5;
+}
+
+.picture3{
+	background-image:url(../images/cheese360.jpg);
+	display:flex;
+	flex-direction:column;
+	flex-shrink:1;
+	margin:0;
+}
+
+.box8 a{
+	opacity: 1.0;
+}
+
+.grid-container{
+	display:grid;
+	grid-template-columns:1fr;
+	grid-template-areas:"logo" "menu" "slogan" "headerpic1" "text1" "headerpic2" "text2" "weblog" "facebook" "twitter" "footer";
+}
+	
+.box1{
+	grid-area:logo;
+}
+
+.box2{
+	grid-area:menu;
+}
+
+.box3{
+	grid-area:slogan;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	height: 6em;
+}
+
+.box4{
+	grid-area:headerpic1;
+}
+
+.box5{
+	grid-area:text1;
+}
+
+.box6{
+	grid-area:headerpic2;
+	background-color:#876C5D;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+}
+	
+.box7{
+	grid-area:text2;
+}
+	
+.box8{
+	grid-area:weblog;
+}
+
+.box8 h2{
+	padding: 0%;
+}
+
+.box9{
+	grid-area:facebook;
+	display:flex;
+	justify-content:center;
+	fill:white;
+	height:55px;
+	background:#3A559F;
+}
+
+.fbicon{
+	height:50px;
+	color:#fff
+}
+
+.box10{
+	grid-area:twitter;
+	display:flex;
+	justify-content:center;
+	fill:white;
+	height:55px;
+	background-color:#50ABF1;
+}
+
+.twticon{
+	height:50px;
+	color:#fff;
+}
+
+.box11{
+	grid-area:footer;
+	background-color:#876C5D
+}
+
+/*Meer over ons button with arrow*/
+.button1,.buttonarrow{
+	Font-family:Open Sans;
+	color:#000;
+	Font-size:12px;
+	text-decoration:none;
+	padding: 5%;
+}
+
+.buttonarrow{
+	font-size:35px;
+}
+
+.box8 .buttonarrow{
+	padding: 0;
+}
+
+/*Header titles*/
+h2{
+	font-family:Overpass,arial;
+	font-weight:400;
+	font-size:36px;
+	color:#000;
+	padding:5%;
+	margin: 0%;
+	display: inline;
+}
+
+/*Text paragraphs*/
+.grid-item,.textp,p{
+	font-family:Open Sans;
+	padding: 5%;
+	font-size:16px;
+	text-align:justify;
+	color:#000;
+	margin: 0;
+}
+
+/*footer text*/
+p{
+	font-size:12px;
+	color:#fff;
+	padding: 0;
+	text-align: center;
+}
+
+.menutoggle a,nav > ul > li > a{
+	color:#000;
+	text-decoration:none;
+	font-family:open sans,calibri;
+	opacity: 0.7;
+}
+
+
+/*Logo for desktop*/
+.desktoplogo{
+	display:none;
+	font-weight:700;
+	font-size:40px;
+}
+
+/*Logo for smaller screens (has to be a different logo because there is some kind of hamburger menu)*/
+.smallerscreenslogo{
+	display:inline;
+	font-weight:700;
+	font-size:40px;
+}
+
+.menutoggle h2{
+	display: flex;
+	justify-content: center;
+}
+
+.menutoggle a{
+	display:flex;
+	font-size:14px;
+	position: absolute;
+    right: 0;
+}
+
+nav ul{
+	display:flex;
+	flex-flow:column;
+	width:100%;
+	padding:0;
+	margin:0;
+}
+
+nav ul li{
+	flex-grow:1;
+	display:flex;
+	padding:1em;
+	margin:.4em;
+	list-style:none;
+	justify-content:center;
+}
+
+/*hamburger menu*/
+.inactive{
+	display:none;
+}
+
+.active{
+	display:initial;
+	
+}
+
+.menutoggle a,nav > ul > li > a:hover{
+	opacity: 1;
+	font-size:bold ;
+	transition: all 0.3s;
+}
+
+.menutoggle a,nav > ul > li > a:not( :hover ){
+	transition: all 0.3s;
+}
+
+
+nav > ul > li:hover{
+	background-color: #eee;
+	transition: all 0.3s;
+}
+
+li u{
+	text-align: right;
+}
+
+.box3,i{
+	font-family:Overpass,arial;
+	text-align:center;
+	font-size:30px;
+	display: flex;
+}
+
+i{
+	border-bottom: black solid 1px;
+}
+
+/*Most used phone size*/
+@media only screen and (min-width:360px){
+.inactive{
+	display:none;
+}
+
+.active{
+	display:initial;
+}
+
+u{
+	    padding: 20%;
+}
+
+/*Most used tablet size*/
+@media only screen and (min-width:768px){
+.picture1,.picture3{
+	background-position:center;
+	background-size:cover;
+	max-width:100%;
+}
+
+.picture1{
+	background-image:url(../images/winkelvoor768.jpg);
+	height:333px;
+	margin:0;
+	/*padding: 0;*/
+}
+
+.picture2{
+	background-image:url(../images/winkelbinnen768.jpg);
+	display:block;
+	background-size:cover;
+}
+
+.picture3{
+	background-image:url(../images/cheese768.jpg);
+	margin:0;
+}
+
+.grid-container{
+	display:grid;
+	grid-template-columns:50% 50%;
+	grid-template-areas:"logo logo" "menu menu" "slogan slogan" "text1 headerpic1" "headerpic2 text2" "weblog weblog" "facebook twitter" "footer footer";
+}
+
+.box1{
+	grid-area:logo;
+}
+
+.box2{
+	grid-area:menu;
+}
+
+.box3{
+	grid-area:slogan;
+	padding: 8%;
+	
+}
+
+.box4{
+	grid-area:headerpic1;
+}
+
+.box5{
+	grid-area:text1;
+	padding:0 10% 10%;
+	position: relative;
+    top: 75px;
+}
+
+.box6{
+	grid-area:headerpic2;
+	height: 333px;
+}
+
+.box7{
+	grid-area:text2;
+	padding:0 10% 10%;
+	position: relative;
+    top: 35px;
+}
+
+.box7 a{
+	padding: 5%;
+}
+
+.box8{
+	grid-area:weblog;
+}
+
+a h2{
+	padding: 0;
+	margin: 0;
+}
+
+.buttonarrow{
+	padding: 0;
+}
+
+.box9{
+	grid-area:facebook;
+	height:55px;
+	background:#3A559F;
+}
+
+.fbicon{
+	height:50px;
+	color:#fff
+}
+
+.box10{
+	grid-area:twitter;
+	height:55px;
+	background-color:#50ABF1;
+}
+
+.twticon{
+	height:50px;
+	color:#fff;
+}
+
+.box11{
+	grid-area:footer;
+	background-color:#876C5D;
+}
+
+.menutoggle{
+	grid-column: 1/3;
+}
+
+.smallerscreenlogo{
+	text-align: center
+}
+
+.inactive{
+	display:none;
+}
+
+.active{
+	display:initial;
+	grid-column: 1/3;
+}
+
+
+@media only screen and (min-width:1024px){
+.box5 {
+    grid-area: text1;
+    padding: 0 10% 10%;
+    position: relative;
+    top: 95px;
+}
+
+.box7{
+	 position: relative;
+    top: 75px;
+}
+
+/*Most used desktop size*/
+
+@media only screen and (min-width:1366px){
+.picture1{
+	background-image:url(../images/winkelvoor1366.jpg);
+	height:100%;
+	margin:0;
+	padding: 0;
+}
+
+.picture2{
+	background-image:url(../images/winkelbinnen1366.jpg);
+	display:block;
+}
+
+.picture3{
+	background-image:url(../images/cheese1366.jpg);
+	margin:0;
+}
+
+.box4,.box6{
+	height:732px;
+}
+
+	
+.picture1:hover{
+	opacity: 0.7;
+}
+
+.picture2{
+	width:440px;
+	height: 360px;
+	background-size:cover;
+}
+
+.picture2:hover{
+	opacity: 0.7;
+}
+	
+	
+.grid-container{
+	display:grid;
+	grid-template-columns:1fr 1fr;
+	grid-template-areas:"logo logo" "menu menu" "slogan headerpic1" "headerpic2 text1" "headerpic2 text2" "weblog weblog" "facebook twitter" "footer footer";}
+	
+.box10,.box6,.box9{
+	display:flex;
+}
+
+.box1{
+	grid-area:logo;
+}
+
+.box2{
+	grid-area:menu;
+}
+
+.box3{
+	grid-area:slogan;
+	height: auto}
+
+.box3 i{
+		padding: 5%;
+}
+	
+.box4{
+	grid-area: headerpic1;
+}
+
+.box5{
+	grid-area: text1;
+	padding: 20% 20% 0;
+	height: 0;
+	position: relative;
+    top: 75px;
+
+}
+
+.box5 p{
+	margin: 0;
+}
+
+.box6{
+	grid-area: headerpic2;
+	align-items: center;
+	justify-content: center;
+}
+
+.box7{
+	grid-area: text2;
+	padding:0 20% 20%;
+	height: 0;
+	position: relative;
+    top: -35px;
+}
+
+.box7 p{
+	margin: 0;
+}
+
+
+.box8{
+	grid-area:weblog;
+}
+
+.box9{
+	grid-area:facebook;
+	justify-content:center;
+	align-items:center;
+	height:117px;
+	fill:#fff;
+}
+
+.box9:hover{
+	background-color: #FFFDDF;
+	fill: #876C5D;
+}
+
+.fbicon{
+	height:32px;
+}
+
+.box10{
+	grid-area:twitter;
+	justify-content:center;
+	align-items:center;
+	height:117px;
+	background-color:#50ABF1;
+	fill:#fff;
+}
+
+/*Change the svg and button color when hovered*/
+.box10:hover{
+	background-color: #FFFDDF;
+	fill: #876C5D;
+}
+
+/*Change the svg and button color when hovered*/
+.twticon{
+	height:32px;
+}
+
+.box11{
+	grid-area:footer;
+	background-color:#876C5D;
+}
+
+/*No hamburger menu but a healthy vertical navbar :>*/
+.menutoggle{
+	display:none;
+}
+
+.inactive{
+	display:block;
+	padding: 0;
+	background-color: white;
+}
+
+nav ul{
+	position: fixed; /* Set the navbar to fixed position */
+    top: 0; 
+	display:flex;
+	flex-flow:row;
+	width:100%;
+	padding:0;
+	z-index: 10;
+	align-items:center;
+	justify-content:center;
+}
+
+nav ul h2{
+	padding: 0;
+}
+
+nav ul li a{
+	padding:0;
+	font-weight: 300;
+}
+
+/*If you hover over the menubar links they become bold*/
+nav ul li a:hover{
+	font-weight: 900;
+}
+
+nav > ul > li:hover{
+	background-color: transparent;
+}
+
+.changeColor{
+   background-color: white;
+   opacity: 0.9;
+}
+
+.desktoplogo{
+	display:inline;
+	font-weight:700;
+	font-size:40px;
+}
+
+/*If you hover over the menubar logo it becomes a little thinner*/
+.desktoplogo:hover{
+	display:inline;
+	font-weight:100;
+	font-size:40px;
+}
+
+/*Arrow button shows feedback to the user, so the user knows they can click on it*/
+.buttonarrow:hover{
+	margin-left: 15px;
+	transition: all 300ms ease;
+}
+}
