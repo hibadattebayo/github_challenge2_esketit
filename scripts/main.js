@@ -1,4 +1,4 @@
-/*When you click on "menu" the button changes into "terug" and the menu appears*/otherwise the menu does not appear.*/
+//When you click on "menu" the button changes into "terug" and the menu appears*/otherwise the menu does not appear.
 document.getElementsByClassName('menutoggle')[0].onclick = function () {
 	if(menu.className == "active"){
 		document.getElementById("menuChange").innerHTML = "Menu";
